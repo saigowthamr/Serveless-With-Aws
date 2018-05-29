@@ -1,0 +1,17 @@
+
+service: aws-gallery
+
+# The `provider` block defines where your service will be deployed
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+# The `functions` block defines what code to deploy
+functions:
+  app:
+    handler: handler.gallery
+    # The `events` block defines how to trigger the http events
+    events:
+        - http: ANY /
+        - http: 'ANY {proxy+}'
+

@@ -1,0 +1,17 @@
+{
+  "name": "awsser",
+  "version": "1.0.0",
+  "description": "This is serverless app using aws and lambda",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "sls deploy"
+  },
+  "author": "saigowtham",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "serverless-http": "^1.5.5"
+  }
+}
